@@ -1,9 +1,18 @@
 import React from "react";
-import Die from "./components/Die";
-import ScoreBoard from "./components/ScoreBoard";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import HomeScreen from "./components/HomeScreen";
 
 export default function App() {
-  return <div>This is an app</div>;
+  const [isStarted, setIsStarted] = React.useState(false);
+  function toggleScreen() {
+    console.log("button clicked");
+    setIsStarted((prevState) => !prevState);
+  }
+  return (
+    <div>
+      {/* <p>THis is a app</p> */}
+      {!isStarted && <HomeScreen toggleScreen={toggleScreen} />}
+    </div>
+  );
 }

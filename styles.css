@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-screen {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 75%;
+  font-size: 24px;
+  text-align: center;
+  color: #293264;
+}
+
+.home-screen > p {
+  font-size: 16px;
+}
+
+.home-screen > button {
+  font-size: 16px;
+  width: 190px;
+  height: 50px;
+  color: white;
+  background: #4d5b9e;
+  border-radius: 15px;
+  border: none;
+}
